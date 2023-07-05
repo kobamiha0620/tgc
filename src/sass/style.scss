@@ -37,7 +37,11 @@ body {
 }
 
 .main{
-
+    &__notice{
+        text-align: center;
+        color: #FFF;
+        @include var.fz(12);
+    }
     img{
         width: 100%;
         height: auto;
