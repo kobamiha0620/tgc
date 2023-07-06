@@ -36,15 +36,23 @@
         padding: 15px 20px;
         margin-top: 30px;
         &--ttl{
-            color: #444;
+            color: #000;
             font-size: 16px;
             text-align: center;
         }
         &--txt{
-            color: #444;
+            color: #000;
             font-size: 13px;
             letter-spacing: 0.1em;
             line-height: 2;
+        }
+        &--author{
+            text-align: right;
+            @include var.fz(13);
+            line-height: 1.6;
+            color: #000;
+            margin: 20px 5px 0 0;
+
         }
     }
     @media screen and (max-width: var.$spbp) {
@@ -74,16 +82,17 @@
             padding: 6vw;
             margin-top: 30px;
             &--ttl{
-                color: #444;
+                color: #000;
                 font-size: 15px;
                 text-align: center;
             }
             &--txt{
-                color: #444;
+                color: #000;
                 font-size: 13px;
                 letter-spacing: 0.1em;
                 line-height: 1.8;
             }
+
         }
     }
 
