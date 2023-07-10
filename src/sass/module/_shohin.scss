@@ -8,9 +8,22 @@
             border: solid 1px #CCC;
         }
     }
-    .shohin__blc--look{
-        border: solid 1px #edbcb9;
+    .shohin__blc--buy{
+        background-color: #888;
     }
+    .shohin__blc--look{
+        border: solid 1px #888888;
+        color: #888888;
+        background-image: url('../../img/icon_arrow02.svg');
+
+    }
+    .shohin__blc    {
+        .swiper-button-next,
+        .swiper-button-prev {
+            --swiper-navigation-color: #888888; //ここに変更する色を指定
+        }
+    }
+
 }
 .shohin {
     background: var.$pink;
@@ -80,7 +93,7 @@
         }
         &--feature{
             @include var.bg;
-            background: url('../../img/feature04.svg') no-repeat 0 0;
+            background: url('../../img/feature05.svg') no-repeat 0 0;
             width: 90px;
             height: 90px;
             position: absolute;
@@ -117,6 +130,14 @@
             background-size: 100% auto;
             margin: 0 0 5px 3px;
          }
+        &--num02{
+            @include var.bg;
+            background: url('../../img/9012_888.svg') no-repeat 0 0;
+            width: 100px;
+            height: 31px;
+            background-size: 100% auto;
+            margin: 0 0 5px 3px;
+        }
         &--name{
             @include var.fz(18);
             line-height: 1.6; 
@@ -246,10 +267,10 @@
                  top: -2vw;
              }
             &--num{
-                @include var.fz(30);
-                margin: 0 0 10px;
+                // @include var.fz(30);
+                // margin: 0 0 10px;
 
-                padding-left: 10px;
+                // padding-left: 10px;
             }
             &--name{
                 @include var.fz(18);
