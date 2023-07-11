@@ -25,9 +25,13 @@
     }
 
 }
+.mt20{
+    margin-top: 20px;
+}
 .shohin {
     background: var.$pink;
-    margin: 0;
+    padding-top: 120px;
+    margin: 0 0 0;
     &__michi{
         padding: 80px 0 0 0;
         &--blc{
@@ -201,13 +205,16 @@
             padding: 20px 0;
             text-decoration: none;
             text-align: center;
+            &.mt20{
+                margin-top: 28px;
+            }
             &:hover{
                 opacity: 0.7;
             }
         }
     }
     @media screen and (max-width: var.$spbp) {
-        padding: 0 0 5% 0;
+        padding: 16vw 0 5% 0;
 
         &__fv{
             margin: 0 auto;
@@ -318,6 +325,9 @@
                 text-align: center;
                 &:hover{
                     opacity: 1;
+                }
+                &.mt20{
+                    margin-top: 7vw;
                 }
             }
         }
